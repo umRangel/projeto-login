@@ -28,13 +28,6 @@ introduziu os conceitos de framework, apresentando o Bootstrap e implementamos T
 - `git push`: Envia os commits locais para o repositório remoto.
 - `git pull`: Atualiza projeto existente.
 
-## 🛠️ Ferramentas Utilizadas
-
-- `HTML5`
-- `CSS3`
-- `Bootstrap`
-- `Git`
-
 ## 🚀 Link do meu projeto acadêmico!
 
 1. Clone este repositório:
