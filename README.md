@@ -1,30 +1,46 @@
-<div align="center">
-  <h1 align="center">
-    <h1 align="center"> 🚀 Projeto - Tela de Login </h1>
-    <br />
-    <br />
-    <a href="https://docusaurus.io">
-      <img src="https://docusaurus.io/img/slash-introducing.svg" alt="Docusaurus">
-    </a>
-    <br />
-    <br />
-  </h1>
-</div>
-<h1 align="center"> 
-    🚧 Projeto em construção 🚧
-</h1>
+<h1 align="center"> 🚀 Projeto em Construção - Tela de Login  </h1>
+
+<p align="center">
+  <img loading="lazy" src="/tela-login.png" />
+</p>
+
+<p align="center">
+  <img loading="lazy" src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
+  <img loading="lazy" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img loading="lazy" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img loading="lazy" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
+</p>
 
 # 📃 Descrição
-Projeto criado na aula da disciplina de programação Front - End, na Unicesumar, campus de Londrina. O professor [Leonardo Rocha](https://github.com/leonardossrocha) introduziu os conceitos de framework, apresentando o Bootstrap e alguns exemplos disponíveis nesse framework, e git, realizando o passo-a-passo de configuração do ambiente de desenvolvimento.
+Projeto criado na disciplina de Programação Front-End, na Unicesumar, campus Londrina. O professor [Leonardo Rocha](https://github.com/leonardossrocha)
+introduziu os conceitos de framework, apresentando o Bootstrap e implementamos Tela de Login como exemplo de Framework, além do Git, realizando o passo a passo da configuração do ambiente de desenvolvimento.
 
-# 🛠️ Ferramentas Utilizadas
+## ⚙️ Funcionalidades
+- Tela de Login (E-mail e Senha)
+- FAQ (dúvidas gerais de login)
 
-- `HTML 5`
+## 🛠️ Comandos do Git no Terminal
+
+- `git status`: Mostra o estado atual do repositório.
+- `git clone`: Cria uma cópia local de um repositório remoto.
+- `git add`: Adiciona arquivos à área de preparação.
+- `git commit -m`: Cria um registro permanente das alterações adicionadas com `git add`.
+- `git push`: Envia os commits locais para o repositório remoto.
+- `git pull`: Atualiza projeto existente.
+
+## 🛠️ Ferramentas Utilizadas
+
+- `HTML5`
 - `CSS3`
 - `Bootstrap`
 - `Git`
 
-#
+## 🚀 Link do meu projeto acadêmico!
 
-## 🎩 Autor
+1. Clone este repositório:
+~~~ shell
+   git clone https://github.com/umRangel/projeto-login.git
+~~~
+
+### 🎩 Autor
 [Ricardo Rangel Piantek](https://linkedin/in/rangel-piantek)
