@@ -12,8 +12,7 @@
 </p>
 
 # 📃 Descrição
-Projeto criado na disciplina de Programação Front-End, na Unicesumar, campus Londrina. O professor [Leonardo Rocha](https://github.com/leonardossrocha)
-introduziu os conceitos de framework, apresentando o Bootstrap e implementamos Tela de Login como exemplo de Framework, além do Git, realizando o passo a passo da configuração do ambiente de desenvolvimento.
+Projeto sendo criado na disciplina de Programação Front-End, na Unicesumar, campus Londrina. O professor [Leonardo Rocha](https://github.com/leonardossrocha) introduziu os conceitos de framework,apresentando o Bootstrap e implementamos Tela de Login como exemplo de Framework, além do Git, realizando o passo a passo da configuração do ambiente de desenvolvimento.
 
 ## ⚙️ Funcionalidades
 - Tela de Login (E-mail e Senha)
