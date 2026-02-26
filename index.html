@@ -31,77 +31,65 @@
   </style>
 </head>
 
-<!-- ================= HTML - TELA DO LOGIN ================= -->
-<body class="text-center">
-  <main class="form-signin w-100 m-auto">
-    <form>
+<!-- ================= HTML - FAQ ================= -->
+<body class="d-flex align-items-center py-4 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-lg-7 col-md-12 pe-lg-5">
+        <section class="faq-container w-100">
+          <h2 class="faq-title mb-4">Perguntas Frequentes</h2>
 
-      <h1 class="h3 mb-3 fw-normal">Faça o acesso</h1>
+          <details class="faq-item">
+            <summary>Esqueci minha senha. O que devo fazer?</summary>
+            <p>Clique na opção "Esqueci minha senha" na tela de login e siga as instruções enviadas para seu e-mail cadastrado.</p>
+          </details>
 
-      <div class="form-floating">
-        <input type="email"
-               class="form-control"
-               id="floatingInput"
-               placeholder="name@example.com">
-        <label for="floatingInput">Endereço de E-mail</label>
+          <details class="faq-item">
+            <summary>Não recebi o e-mail de recuperação. E agora?</summary>
+            <p>Verifique sua caixa de spam ou lixo eletrônico. Caso não encontre, aguarde alguns minutos.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Minha conta está bloqueada. Como resolver?</summary>
+            <p>A conta pode ser bloqueada após múltiplas tentativas. Aguarde 15 minutos ou contate o suporte.</p>
+          </details>
+          
+          <details class="faq-item">
+            <summary>Posso alterar meu e-mail cadastrado?</summary>
+            <p>Sim. Após o login, acesse as configurações da conta para atualizar seus dados.</p>
+          </details>
+        </section>
+      </div>
+      
+      <!-- ================= HTML - TELA DO LOGIN ================= -->
+      <div class="col-lg-5 col-md-12">
+        <main class="form-signin">
+          <form>
+            <h1 class="h3 mb-3 fw-normal text-center">Faça o acesso</h1>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Endereço de E-mail</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+              <label for="floatingPassword">Senha</label>
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Lembrar-me
+              </label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2017–2026</p>
+          </form>
+        </main>
       </div>
 
-      <div class="form-floating">
-        <input type="password"
-               class="form-control"
-               id="floatingPassword"
-               placeholder="Password">
-        <label for="floatingPassword">Senha</label>
-      </div>
-
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me">
-          Lembrar-me
-        </label>
-      </div>
-
-      <button class="w-100 btn btn-lg btn-primary" type="submit">
-        Entrar
-      </button>
-
-      <p class="mt-5 mb-3 text-muted">
-        &copy; 2017–2026
-      </p>
-    </form>
-  </main>
-
-  <!-- ================= HTML - TELA DO FAQ ================= -->
-  <section class="faq-container container mt-5">
-    <h2 class="faq-title text-center mb-4">Perguntas Frequentes</h2>
-
-    <details class="faq-item mb-3">
-      <summary>Esqueci minha senha. O que devo fazer?</summary>
-      <p class="mt-2">
-        Clique na opção "Esqueci minha senha" na tela de login e siga as instruções enviadas para seu e-mail cadastrado.
-      </p>
-    </details>
-
-    <details class="faq-item mb-3">
-      <summary>Não recebi o e-mail de recuperação. E agora?</summary>
-      <p class="mt-2">
-        Verifique sua caixa de spam ou lixo eletrônico. Caso não encontre, aguarde alguns minutos e tente novamente.
-      </p>
-    </details>
-
-    <details class="faq-item mb-3">
-      <summary>Minha conta está bloqueada. Como resolver?</summary>
-      <p class="mt-2">
-        A conta pode ser bloqueada após múltiplas tentativas incorretas. Aguarde alguns minutos ou entre em contato com o suporte.
-      </p>
-    </details>
-
-    <details class="faq-item mb-3">
-      <summary>Posso alterar meu e-mail cadastrado?</summary>
-      <p class="mt-2">
-        Sim. Após realizar login, acesse as configurações da conta para atualizar seus dados.
-      </p>
-    </details>
-  </section>
+    </div>
+  </div>
 </body>
 </html>
