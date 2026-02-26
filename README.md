@@ -1,7 +1,7 @@
 <h1 align="center"> 🚀 Projeto em Construção - Tela de Login  </h1>
 
 <p align="center">
-  <img loading="lazy" src="/tela-login.png" />
+  <img src="tela-login.png" style="border-radius: 16px;" width="800">
 </p>
 
 <p align="center">
