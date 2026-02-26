@@ -46,53 +46,105 @@ body {
 
 .faq-container {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 24px;
+  max-width: 700px;
+  /* Ajustado para 60px no topo e 40px na base para espelhar o .form-signin */
+  margin: 60px auto 40px auto; 
+  /* Ajustado o padding para 40px no topo/base para alinhar o conteúdo interno */
+  padding: 40px 30px; 
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  /* Garante que o container não "estique" além do necessário */
+  display: inline-block; 
+  vertical-align: top;
 }
 
 .faq-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #212529;
+  font-size: 1.75rem;
+  font-weight: 800;
+  /* Removido margem exagerada para manter o topo limpo */
+  margin-top: 0; 
+  margin-bottom: 30px;
+  color: #1a202c;
+  letter-spacing: -0.5px;
 }
 
 .faq-item {
-  border-bottom: 1px solid #e9ecef;
-  padding: 12px 0;
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.faq-item:last-child {
-  border-bottom: none;
+.faq-item:hover {
+  border-color: #cbd5e0;
+  background-color: #f8faff;
+  transform: translateY(-2px);
 }
 
 .faq-item summary {
-  font-size: 0.95rem;
+  padding: 18px 20px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  color: #0d6efd;
+  color: #2d3748;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
 }
 
+/* Criando o ícone de seta customizado */
+.faq-item summary::after {
+  content: '🢒'; /* Usei um triângulo que fica melhor para girar */
+  font-size: 0.8rem;
+  transition: transform 0.3s ease; /* Isso faz ela girar suavemente */
+  display: inline-block;
+}
+
+/* Esconde o marcador padrão do Chrome/Safari */
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
 
-.faq-item p {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #495057;
+/* Quando a FAQ está aberta */
+.faq-item[open] {
+  background-color: #ffffff;
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.1);
 }
 
 .faq-item[open] summary {
-  color: #084298;
+  color: #4a90e2;
+  border-bottom: 1px solid #edf2f7;
 }
 
+.faq-item[open] summary::after {
+  transform: rotate(90deg); /* Gira a setinha para baixo */
+}
+
+.faq-item p {
+  padding: 20px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  background-color: #fcfdff;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ================= CSS - BOTÃO LOGIN - EFEITO ================= */
 
 .form-signin .btn-primary {
