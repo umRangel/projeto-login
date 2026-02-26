@@ -47,14 +47,11 @@ body {
 .faq-container {
   width: 100%;
   max-width: 700px;
-  /* Ajustado para 60px no topo e 40px na base para espelhar o .form-signin */
   margin: 60px auto 40px auto; 
-  /* Ajustado o padding para 40px no topo/base para alinhar o conteúdo interno */
   padding: 40px 30px; 
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  /* Garante que o container não "estique" além do necessário */
   display: inline-block; 
   vertical-align: top;
 }
@@ -62,7 +59,6 @@ body {
 .faq-title {
   font-size: 1.75rem;
   font-weight: 800;
-  /* Removido margem exagerada para manter o topo limpo */
   margin-top: 0; 
   margin-bottom: 30px;
   color: #1a202c;
@@ -96,11 +92,11 @@ body {
   transition: background-color 0.2s;
 }
 
-/* Criando o ícone de seta customizado */
+/* Cria o ícone de seta customizado */
 .faq-item summary::after {
-  content: '🢒'; /* Usei um triângulo que fica melhor para girar */
+  content: '🢒'; /* Triângulo para girar*/
   font-size: 0.8rem;
-  transition: transform 0.3s ease; /* Isso faz ela girar suavemente */
+  transition: transform 0.3s ease; /* Gira suavemente */
   display: inline-block;
 }
 
@@ -109,7 +105,6 @@ body {
   display: none;
 }
 
-/* Quando a FAQ está aberta */
 .faq-item[open] {
   background-color: #ffffff;
   border-color: #4a90e2;
@@ -132,27 +127,31 @@ body {
   line-height: 1.6;
   color: #4a5568;
   background-color: #fcfdff;
-  animation: slideDown 0.4s ease-out;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.faq-item::details-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.faq-item:not([open])::details-content {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.faq-item[open]::details-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ================= CSS - BOTÃO LOGIN - EFEITO ================= */
 
 .form-signin .btn-primary {
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition: all 0.3s ease;
 }
 
 .form-signin .btn-primary:hover {
-  transform: translateY(2px);
+  transform: scale(0.98);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Adiciona uma sombra */
 }
 
 .form-signin .btn-primary:active {
